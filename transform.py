@@ -145,8 +145,8 @@ def basemap_text(image, region):
     small_font = ImageFont.truetype('fonts/raleway.otf', 18)
 
     if region == 'Conus':
-        draw.text((10, h - 23), "@wxGIF", (50, 50, 50), font=small_font)
-        draw.text((w - 210, h - 23), "Radar, made for Twitter",
+        draw.text((10, h - 23), "", (50, 50, 50), font=small_font)
+        draw.text((w - 210, h - 23), "@BWeatherMaine",
             (50, 50, 50), font=small_font)
         return image
 
@@ -165,8 +165,8 @@ def basemap_text(image, region):
     else:
         color = (100, 100, 100)
 
-    draw.text((x_pos, y_pos), "@wxGIF", color, font=font)
-    draw.text((x_pos + 5, y_pos + 62), "Radar, made for Twitter", color, font=small_font)
+    draw.text((x_pos, y_pos), "", color, font=font)
+    draw.text((x_pos + 5, y_pos + 62), "@BWeatherMaine", color, font=small_font)
     return image
 
 
